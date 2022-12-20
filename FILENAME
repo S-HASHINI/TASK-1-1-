@@ -1,0 +1,13 @@
+#Python program to accept a filename from the user and print the extension of that
+
+# get the filename with extension from the user and store it in variable filename
+filename = input("enter complete filename with extension :")
+
+# split filename based on .(dot) and store in variable sep
+sep = filename.split(".")
+
+#get the last value from the sep list i.e. the file extension
+extn = sep[-1]
+
+#print the extension
+print("extension of the filename %s is %s"%(filename,extn))
